@@ -1,0 +1,379 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+
+<!-- fevicon or browser icon -->
+		<link rel="icon" type="image/png" href="images/apple-touch-icon.png">
+
+
+<style>
+
+.glow-on-hover img {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover img:hover {
+  box-shadow: 0 0 15px 5px gold;
+  transform: scale(1.05);
+}
+
+.bullet-point{
+  font-family:   'Quicksand', sans-serif;
+  font-size: 0.99em;
+  line-height: 1.5;
+  color: whitesmoke;
+}
+
+
+.heading{
+		color:gold;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 700;
+		letter-spacing: 0.1em;
+		margin: 0 0 1em 0;
+		text-transform: uppercase;
+	}
+	
+	
+	.para-font{
+  font-family:   'Quicksand', sans-serif;
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: #F0F0F0 ;
+}
+
+
+.footer-text {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: white;
+}
+
+.contact li {
+  display: flex;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.contact .icon::before {
+  font-size: 0.9em; /* Adjust as needed */
+  margin-right: 12px;
+}
+
+
+
+</style>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+		<title>AnalystVandan | Project 2</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+					
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+			<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+  <li><a href="index.html" onclick="smoothScroll(event, 'index.html')"><b>Home</b></a></li>
+  <li><a href="projects.html"><b>Projects </b></a></li>
+  <li><a href="#footer" onclick="smoothScroll(event, '#footer')"><b>Get In touch</b></a></li>
+</ul>
+<a href="#" class="close">Close</a>
+</div>
+</nav>
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2 class="heading" style="border-bottom: 1px solid gold;"> Project 2 🛵</h2>
+								<p class="four-text"><b>Rydan Bike Taxi Analysis || SQL + Power BI</b> 
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major heading" style="border-bottom: 1px solid gold;">Introduction</h3>
+									<p class="para-font">In a world where convenience and speed are key, bike taxi services like Rydan 
+										are transforming the way people commute. But behind every ride lies a story - 
+										of customer behavior, service efficiency, revenue patterns, and operational
+										 performance. This project dives into those stories using data as the guide.<br><br>
+										 The Rydan Bike Taxi Analysis is like a roadmap that uncovers how the business 
+										 is doing, why customers cancel rides, which areas bring in the most revenue, 
+										 and how riders are performing. By breaking down data into clear trends and 
+										 insights, this dashboard empowers decision-makers to understand what's working and what needs a tune-up.<br><br>
+										 More than just numbers on a screen, this analysis provides a pulse check on
+										the entire operation. It helps the company make smart decisions that 
+										improve service quality, boost customer satisfaction, and guide the business in the right direction.</p>
+									<h3 class="major heading"style="border-bottom: 1px solid gold;">business problem</h3>
+									<p class="para-font">Rydan Bike Taxi lacks clear visibility into customer behavior, cancellation trends, revenue patterns, and vehicle performance. This limits its ability to make smart decisions that improve customer retention, streamline operations, and drive revenue growth.</p>
+									
+									
+<h3 class="major heading" style="border-bottom: 1px solid gold;">Chapter 1: Data preprocessing</h3>
+<p class="para-font">Before diving into the dashboards, careful data preprocessing was performed. Unnecessary columns were removed, missing values were handled, and duplicate entries were eliminated. Column names were also cleaned and standardized using Power BI's Power Query Editor to ensure a well-structured dataset for accurate visualizations.</p>
+								
+									
+<h3 class="major heading" style="border-bottom: 1px solid gold;">Chapter 2: overall dashboard</h3>
+<p class="para-font">This dashboard gives a quick and easy snapshot of how Rydan is doing. It shows total earnings, number of bookings, and average ride distance. A pie chart breaks down how many rides were completed, canceled, or left unfinished. There's also a daily ride chart that shows clear patterns—some days are super busy, likely weekends or peak days.</p>									</p>
+
+<!--styling images on separate page-->
+<style>
+img {
+max-width: 100%;
+max-height: 100%;
+height: auto;
+}
+</style>
+
+<!--glowing effect on images-->
+<div class="glow-on-hover">
+  <img src="images/overall.png" alt="Overall Dashboard">
+</div>
+<p></p>
+
+<h4 class="heading" >Key insights</h4>
+<ul style="list-style-type: disc;" class="para-font">
+<li>Most rides (about 60%) were completed successfully.</li>
+<li>Around 1 in 5 rides were canceled by drivers, and some rides didn't finish properly.</li>
+<li>Ride bookings go up every 7 days, likely on weekends or special days.</li>
+<li>On average, people travel about 14 km per ride.</li>
+<li>The app has handled over 1 lakh total bookings - showing it's widely used.</li>
+</ul>
+
+<h3 class="major heading" style="border-bottom: 1px solid gold;">Chapter 3: revenue dashboard</h3>
+<p class="para-font">Focusing on financial performance, this dashboard breaks down earnings by payment methods and highlights top-spending customers. It also tracks how ride distances vary across days of the month.</p>
+
+<!--glowing effect on images-->
+<div class="glow-on-hover">
+  <img src="images/revenue.png" alt="Overall Dashboard">
+</div>
+<p></p>
+
+<h4 class="heading" >Key insights</h4>
+<ul style="list-style-type: disc;" class="para-font">
+<li>Most people prefer to pay with cash or UPI.</li>
+<li>Fewer people use cards or eWallets, which could be improved with offers or promotions.</li>
+<li>Just the top 5 users spent over ₹22,000 — showing there are some very active customers.</li>
+<li>Ride distances are higher on certain days, which matches the weekly ride spikes — likely weekends.</li>
+</ul>
+
+
+
+<h3 class="major heading" style="border-bottom: 1px solid gold;">Chapter 4: Types dashboard</h3>
+<p class="para-font">This dashboard focuses on the performance of different vehicle types across key operational metrics. It provides detailed insight into booking value, distance metrics, and customer ride behavior segmented by vehicle category.</p>
+
+<!--glowing effect on images-->
+<div class="glow-on-hover">
+  <img src="images/types.png" alt="Overall Dashboard">
+</div>
+<p></p>
+
+<h4 class="heading" >Key insights</h4>
+<ul style="list-style-type: disc;" class="para-font">
+<li>All vehicle types show similar performance in revenue and distance, indicating balanced user demand.</li>
+<li>Mini cars and Ebikes offer a good mix of trip distance and earnings, suggesting efficiency.</li>
+<li>Auto rickshaws stand out for strong revenue and usage, proving both popular and cost-effective.</li>
+<li>The average ride distance is consistent across types, ranging from 8.26 to 8.43 km.</li>
+</ul>
+
+
+<h3 class="major heading" style="border-bottom: 1px solid gold;">Chapter 5: Ratings & Cancellation Dashboard</h3>
+<p class="para-font">This dashboard captures platform reliability and satisfaction, combining user feedback with cancellation behavior insights. It evaluates both driver and customer ratings as well as the causes and distribution of booking cancellations.</p>
+
+<!--glowing effect on images-->
+<div class="glow-on-hover">
+  <img src="images/cancelled.png" alt="Overall Dashboard">
+</div>
+
+<h1 class="major heading" style="border-bottom: 2px solid gold;"></h1>
+
+
+<div class="glow-on-hover">
+  <img src="images/ratings.png" alt="Overall Dashboard">
+</div>
+<p></p>
+
+<h4 class="heading" >Key insights</h4>
+<ul style="list-style-type: disc;" class="para-font">
+<li>Mini and Auto have the best driver ratings, showing strong performance in those categories.
+</li>
+<li>Customer ratings are lower across the board, with none above 2.50 *suggesting room for improving rider experience.
+</li>
+<li>Cancellations are high at 25%, mostly due to drivers and incomplete rides.
+</li>
+<li>Top reasons for cancellations include wrong addresses, delays, and AC issues *pointing to app and vehicle quality improvements.
+</li>
+<li>There's a clear gap between driver satisfaction and customer experience, especially in premium categories like Prime Sedan and Plus.
+</li>
+</ul>
+
+
+<h3 class="major heading" style="border-bottom: 1px solid gold;"> Chapter 6: Sql Data Analysis and preparation</h3>
+<p class="para-font">Behind the scenes of the dashboard magic, I rolled up my sleeves and dove into over 100k+
+ride records using MySQL. I gave the messy data a good cleanup, then crafted smart queries to uncover 
+cool patterns like when people love to book rides, how they behave, and where the money flows. 
+I turned all that raw data into visuals that actually make sense Thanks! to Power BI.</p>
+<h4 class="heading" >Key insights</h4>
+<ul style="list-style-type: disc;" class="para-font">
+<li><b></b><span class="bullet-point">🧑‍💼Customer Behavior <b>~</b></span><br>
+🔹Identified loyal customers who made 5+ successful rides with zero cancellations — ideal for reward or referral programs. <br>
+🔹Found that most cancellations occur mid-week, helping optimize driver availability and app notifications.
+</li>
+<li><b></b><span class="bullet-point">💰Revenue Trends <b>~</b></span><br>
+🔹Discovered top pickup → drop routes contributing the highest revenue — useful for targeted promotions.<br>
+🔹Analyzed daily and cumulative revenue to support time-series dashboards in Power BI.<br>
+</li>
+<li><span class="bullet-point">🚗Vehicle Performance <b>~</b></span><br>
+🔹Evaluated each vehicle type on average ride distance, booking value, and cancellation rate.<br>
+🔹Ranked vehicle types based on combined efficiency — supporting fleet strategy and pricing decisions.<br>
+</li>
+<li><span class="bullet-point">🛠️Operational Insights <b>~</b></span><br>
+🔹Flagged high-value canceled rides for business attention — helping minimize revenue leakage. <br>
+🔹Calculated and visualized weekly revenue growth, supporting business forecasting. <br>
+</li>
+</ul>
+
+
+<h3 class="major heading" style="border-bottom: 1px solid gold;">business solution</h3>
+<p class="para-font">To help Rydan Bike Taxi improve its service and grow the business, the following solutions should be implemented</p>
+<ul style="list-style-type: disc;" class="para-font">
+<li>  <span class="bullet-point">📊Better Visibility <b>~</b> </span> <br>🔹Created clear dashboards to track key metrics and support smarter decisions.
+</li>
+<li>  <span class="bullet-point">❌Reducing Cancellations <b>~</b></span> <br>🔹Reduced cancellations by fixing address issues, delays, and improving driver and vehicle quality.
+</li>
+<li> <span class="bullet-point">😊Improving Customer Experience <b>~</b></span></b> <br>🔹Collected feedback and provided driver training to raise customer satisfaction and ratings.
+</li>
+<li><span class="bullet-point">🎁Rewarding Loyal Customers <b>~</b></span></b> <br>🔹Introduced a loyalty program and special offers for top customers to keep them coming back.
+</li>
+<li><span class="bullet-point">💳Encouraging Digital Payments <b>~</b></span></b> <br>🔹Promoted digital payments (like UPI and cards) with discounts and easier payment options.
+</li>
+<li><span class="bullet-point">🚗Optimizing Vehicles <b>~</b></span></b> <br>🔹Adjusted vehicle availability based on demand, ensuring the right vehicles are in the right places.
+</li>
+<li><span class="bullet-point">⏰Smart Planning for Peak Times <b>~</b></span></b> <br>🔹Offered incentives for drivers and adjusted pricing during busy times to maximize revenue.
+</li>
+</ul>
+<p class="para-font">Result <b>:</b></b> These actions improved efficiency, higher customer satisfaction, and helped the business grow.</p>
+<!-- see code here -->
+<a href="https://github.com/VandanJagarwal/Rydan-Bike-Taxi-Analysis" class="special">See code here!</a>
+<p></p>
+
+<!-- Projects and home link -->
+	<section class="features">
+<article>
+<h3 class="major" style="border-bottom: 1px solid gold;">Projects🔥</h3>
+<p class="para-font"><b>Every dataset has a heartbeat💓 here's how I tune in and make it sing.🎺</b></p>
+<a href="projects.html" class="special">Go to Projects🔥</a>
+</article>
+
+<article>
+<h3 class="major" style="border-bottom: 1px solid gold;">Home🌟</h3>
+<p class="para-font"><b>Return to the heart where it all started.❤️</b></p>&nbsp;
+<a href="index.html" class="special">Go to home🌟</a>
+</article>
+</section>
+
+<section class="features">
+										
+										
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+			<section id="footer">
+						<div class="inner">
+							<h2 class="major" style="border-bottom: 1px solid gold;">Get in touch</h2>
+							<p class="footer-text" style="font-size: 1.1rem;">
+								Your data + my brain = smart decisions. Got a challenge or an idea? Let's talk!</p>
+								<ul class="contact">
+								<li class="icon solid fa-home footer-text">
+									India (ready to relocate)</li>
+									<li class="icon solid fa-envelope footer-text">
+										<a href="mailto:vandan29108@gmail.com">vandan29108@gmail.com</a>
+									</li>
+									<li class="icon brands fa-github footer-text">
+										<a href="https://github.com/VandanJagarwal">github.com/VandanJagarwal</a>
+									</li>
+									<li class="icon brands fa-linkedin footer-text">
+										<a href="https://www.linkedin.com/in/vandan29108">linkedin.com/in/vandan29108</a>
+									</li>
+
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Portfolio.All rights reserved.
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+<script>
+					function smoothScroll(event, selector) {
+					  event.preventDefault();
+					  const target = document.querySelector(selector);
+					  if (!target) return;
+				  
+					  const start = window.scrollY;
+					  const end = target.getBoundingClientRect().top + start;
+					  const duration = 1000; // ← adjust this to control speed (in milliseconds)
+					  const startTime = performance.now();
+				  
+					  function scrollStep(currentTime) {
+						const timeElapsed = currentTime - startTime;
+						const progress = Math.min(timeElapsed / duration, 1);
+				  
+						// Ease-in-out function
+						const ease = progress < 0.5
+						  ? 2 * progress * progress
+						  : -1 + (4 - 2 * progress) * progress;
+				  
+						window.scrollTo(0, start + (end - start) * ease);
+				  
+						if (progress < 1) {
+						  requestAnimationFrame(scrollStep);
+						}
+					  }
+				  
+					  requestAnimationFrame(scrollStep);
+					}
+				  </script>
+
+	</body>
+</html>
